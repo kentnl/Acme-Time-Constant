@@ -123,7 +123,8 @@ allow_includes = 1
 [ControlStructures::ProhibitUntilBlocks]
 
 [Documentation::PodSpelling]
-spell_command = aspell list --lang en_US
+spell_command = aspell list --lang en_GB
+stop_words = neurotoxic supernormal timeline
 
 [Documentation::ProhibitAdjacentLinks]
 
@@ -165,7 +166,7 @@ spell_command = aspell list --lang en_US
 
 [ErrorHandling::RequireCheckingReturnValueOfEval]
 
-[ErrorHandling::RequireUseOfExceptions]
+[-ErrorHandling::RequireUseOfExceptions]
 
 [InputOutput::ProhibitBacktickOperators]
 
