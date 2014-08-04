@@ -20,13 +20,13 @@ $bundle->configure;
 
 my @stopwords = (
   qw(
-  neurotoxic supernormal timeline
+    neurotoxic supernormal timeline
     )
 );
 for my $wordlist (@stopwords) {
   $bundle->add_or_append_policy_field( 'Documentation::PodSpelling' => ( 'stop_words' => $wordlist ) );
 }
-$bundle->add_or_replace_policy_field('Documentation::PodSpelling' => ( 'spell_command' => 'aspell list --lang en_GB' ));
+$bundle->add_or_replace_policy_field( 'Documentation::PodSpelling' => ( 'spell_command' => 'aspell list --lang en_GB' ) );
 
 #$bundle->add_or_append_policy_field(
 #  'Subroutines::ProhibitCallsToUndeclaredSubs' => ( 'exempt_subs' => 'String::Formatter::str_rf' ), );

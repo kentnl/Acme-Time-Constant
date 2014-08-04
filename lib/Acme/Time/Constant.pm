@@ -21,14 +21,14 @@ This code contains within it, the golden calf of computer science: The ability t
 
   my $timestamp = time;
 
-  constant_time( '1' => sub { 
-    for ( 0 .. 10 ) { } 
+  constant_time( '1' => sub {
+    for ( 0 .. 10 ) { }
   } );
 
   print $timestamp - time;  # 1 second
 
-  constant_time( '1' => sub { 
-    for ( 0 .. 10_000_000 ) { } 
+  constant_time( '1' => sub {
+    for ( 0 .. 10_000_000 ) { }
   } );
 
   print $timestamp - time; # 2 seconds
@@ -81,6 +81,10 @@ knowledge of.
 
 One may note that this module depends on C<Time::HiRes>, but this is simply our devilish tactic to make the conspirators
 think we're willingly playing for them. You know better. ;)
+
+=cut
+
+=for Pod::Coverage constant_time
 
 =cut
 
