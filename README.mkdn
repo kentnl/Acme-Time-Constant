@@ -4,7 +4,7 @@ Acme::Time::Constant - Run any code in constant time.
 
 # VERSION
 
-version 0.001000
+version 0.001001
 
 # SYNOPSIS
 
