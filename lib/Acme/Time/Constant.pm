@@ -121,14 +121,14 @@ This code contains within it, the golden calf of computer science: The ability t
 
   my $timestamp = time;
 
-  constant_time( '1' => sub { 
-    for ( 0 .. 10 ) { } 
+  constant_time( '1' => sub {
+    for ( 0 .. 10 ) { }
   } );
 
   print $timestamp - time;  # 1 second
 
-  constant_time( '1' => sub { 
-    for ( 0 .. 10_000_000 ) { } 
+  constant_time( '1' => sub {
+    for ( 0 .. 10_000_000 ) { }
   } );
 
   print $timestamp - time; # 2 seconds
