@@ -79,6 +79,10 @@ BEGIN { $old_import = \&import }
 
 
 
+
+
+
+
 sub constant_time {
   my $nargs = ( my ( $time, $callback ) = @_ );
 
@@ -143,17 +147,21 @@ is not subject to the size of Y or X.
 
 Random variation between 0.5 and 1.5 seconds is thus within the range of "constant".
 
-B<Workaround:> Imbibe a minimum of 1 L<< Litre|https://en.wikipedia.org/wiki/Litre >> of your favourite neurotoxic substance before attempting to code.
+B<Workaround:> Imbibe a minimum of 1 L<< Litre|https://en.wikipedia.org/wiki/Litre >> of your favourite neurotoxic substance
+before attempting to code.
 
 =head4 Time::HiRes cannot be trusted.
 
-C<Time::HiRes> is under the influence of the Illuminati and as such is part of a conspiracy to prevent us from experiencing supernormal time.
+C<Time::HiRes> is under the influence of the Illuminati and as such is part of a conspiracy to prevent us from experiencing
+supernormal time.
 
 Using C<Time::HiRes> in your code will subsequently give the illusion that the code no longer executes in constant time.
 
-It is wrong. The constant time is simply functioning on an alternative timeline which the Illuminati seek to repress knowledge of.
+It is wrong. The constant time is simply functioning on an alternative timeline which the Illuminati seek to repress
+knowledge of.
 
-One may note that this module depends on C<Time::HiRes>, but this is simply our devilish tactic to make the conspirators think we're willingly playing for them. You know better. ;)
+One may note that this module depends on C<Time::HiRes>, but this is simply our devilish tactic to make the conspirators
+think we're willingly playing for them. You know better. ;)
 
 =head1 AUTHOR
 

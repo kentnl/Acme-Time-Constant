@@ -20,6 +20,7 @@ $bundle->configure;
 
 my @stopwords = (
   qw(
+  neurotoxic supernormal timeline
     )
 );
 for my $wordlist (@stopwords) {
