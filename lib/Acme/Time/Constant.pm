@@ -42,6 +42,7 @@ my $old_import;
 BEGIN { $old_import = \&import }
 
 {
+  ## no critic (TestingAndDebugging::ProhibitNoWarnings)
   no warnings 'redefine';
 
   sub import {

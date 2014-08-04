@@ -124,6 +124,7 @@ allow_includes = 1
 
 [Documentation::PodSpelling]
 spell_command = aspell list --lang en_GB
+stop_words = neurotoxic supernormal timeline
 
 [Documentation::ProhibitAdjacentLinks]
 
