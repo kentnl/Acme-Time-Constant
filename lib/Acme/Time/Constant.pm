@@ -5,7 +5,7 @@ use utf8;
 
 package Acme::Time::Constant;
 
-our $VERSION = '0.001000';
+our $VERSION = '0.001001';
 
 # ABSTRACT: Run any code in constant time.
 
