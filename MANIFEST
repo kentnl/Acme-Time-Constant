@@ -9,6 +9,7 @@ META.yml
 Makefile.PL
 README
 dist.ini
+dist.ini.meta
 lib/Acme/Time/Constant.pm
 maint/perlcritic.rc.gen.pl
 misc/perlcritic.deps
