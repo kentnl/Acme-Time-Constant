@@ -13,28 +13,6 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 use Sub::Exporter::Progressive -setup => { exports => [qw( constant_time )] };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 use Time::HiRes qw( gettimeofday );
 use Time::Warp qw( to time );
 
@@ -50,39 +28,6 @@ BEGIN { $old_import = \&import }
     goto $old_import;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -137,6 +82,8 @@ This code contains within it, the golden calf of computer science: The ability t
 
   print $timestamp - time; # 2 seconds
 
+=for Pod::Coverage constant_time
+
 =head1 BUGS
 
 =head4 General relativity does not hold in the context of this code.
@@ -167,8 +114,6 @@ knowledge of.
 
 One may note that this module depends on C<Time::HiRes>, but this is simply our devilish tactic to make the conspirators
 think we're willingly playing for them. You know better. ;)
-
-=for Pod::Coverage constant_time
 
 =head1 AUTHOR
 

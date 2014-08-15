@@ -1,9 +1,16 @@
 Release history for Acme-Time-Constant
 
-0.001001 2014-08-11T11:05:12Z
+0.001001 2014-08-15T04:18:58Z
+ [00 Trivial]
+ - no code changes.
+ - whitespace adjustment.
+
  [Dependencies::Stats]
  - Dependencies changed since 0.001000, see misc/*.deps* for details
  - develop: +1 (suggests: ↑1)
+
+ [Misc]
+ - Whitespace moved down by improving pre-build source.
 
 0.001000 2014-08-04T04:27:24Z
  - First version.
