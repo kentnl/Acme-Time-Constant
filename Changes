@@ -3,7 +3,7 @@ Release history for Acme-Time-Constant
 {{$NEXT}}
  [Dependencies::Stats]
  - Dependencies changed since 0.001000, see misc/*.deps* for details
- - develop: (suggests: ↑1)
+ - develop: +1 (suggests: ↑1)
 
 0.001000 2014-08-04T04:27:24Z
  - First version.
