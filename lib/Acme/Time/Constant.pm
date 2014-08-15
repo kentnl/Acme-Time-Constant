@@ -13,6 +13,41 @@ our $VERSION = '0.001001';
 
 use Sub::Exporter::Progressive -setup => { exports => [qw( constant_time )] };
 
+use Time::HiRes qw( gettimeofday );
+use Time::Warp qw( to time );
+
+my $old_import;
+BEGIN { $old_import = \&import }
+
+{
+  ## no critic (TestingAndDebugging::ProhibitNoWarnings)
+  no warnings 'redefine';
+
+  sub import {
+    *CORE::GLOBAL::time = *Time::Warp::time;
+    goto $old_import;
+  }
+}
+
+=for Pod::Coverage constant_time
+
+=cut
+
+sub constant_time {
+  my $nargs = ( my ( $time, $callback ) = @_ );
+
+  if ( $nargs < 2 ) {
+    $callback = $time;
+    $time     = 1;
+  }
+  my $now = time;
+  $callback->();
+  to( $now + $time );
+  return;
+}
+
+1;
+
 =head1 SYNOPSIS
 
 This code contains within it, the golden calf of computer science: The ability to execute any code in constant time.
@@ -32,24 +67,6 @@ This code contains within it, the golden calf of computer science: The ability t
   } );
 
   print $timestamp - time; # 2 seconds
-
-=cut
-
-use Time::HiRes qw( gettimeofday );
-use Time::Warp qw( to time );
-
-my $old_import;
-BEGIN { $old_import = \&import }
-
-{
-  ## no critic (TestingAndDebugging::ProhibitNoWarnings)
-  no warnings 'redefine';
-
-  sub import {
-    *CORE::GLOBAL::time = *Time::Warp::time;
-    goto $old_import;
-  }
-}
 
 =head1 BUGS
 
@@ -83,22 +100,3 @@ One may note that this module depends on C<Time::HiRes>, but this is simply our 
 think we're willingly playing for them. You know better. ;)
 
 =cut
-
-=for Pod::Coverage constant_time
-
-=cut
-
-sub constant_time {
-  my $nargs = ( my ( $time, $callback ) = @_ );
-
-  if ( $nargs < 2 ) {
-    $callback = $time;
-    $time     = 1;
-  }
-  my $now = time;
-  $callback->();
-  to( $now + $time );
-  return;
-}
-
-1;
