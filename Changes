@@ -1,6 +1,6 @@
 Release history for Acme-Time-Constant
 
-0.001003 2014-08-30T01:37:53Z
+0.001003 2014-08-30T07:47:06Z
  [00 Minor]
  - Improve test coverage.
  - Pull timespace and subspace closer together.
