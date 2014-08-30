@@ -26,7 +26,7 @@ $timestamp = time;
 constant_time(
   1 => sub {
     my $j;
-    for my $i ( 0 .. 50_000_000 ) {
+    for my $i ( 0 .. 2_000_000 ) {
       $j += $i;
     }
   }
