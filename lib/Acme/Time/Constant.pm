@@ -36,16 +36,6 @@ BEGIN { $old_import = \&import }
 
 
 
-
-# this is code
-
-
-
-
-
-
-
-
 sub constant_time {
   my $nargs = ( my ( $time, $callback ) = @_ );
 
@@ -95,7 +85,9 @@ This code contains within it, the golden calf of computer science: The ability t
 
   print $timestamp - time; # 2 seconds
 
-=head2 BUGS
+=begin :abouttime
+
+=head1 BUGS
 
 =head4 General relativity does not hold in the context of this code.
 
@@ -125,10 +117,6 @@ knowledge of.
 
 One may note that this module depends on C<Time::HiRes>, but this is simply our devilish tactic to make the conspirators
 think we're willingly playing for them. You know better. ;)
-
-=begin :abouttime
-
-=head1 SAMPLE
 
 =end :abouttime
 
