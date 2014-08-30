@@ -2,7 +2,7 @@ NAME
     Acme::Time::Constant - Run any code in constant time.
 
 VERSION
-    version 0.001002
+    version 0.001003
 
 SYNOPSIS
     This code contains within it, the golden calf of computer science: The
@@ -56,6 +56,11 @@ BUGS
     One may note that this module depends on "Time::HiRes", but this is
     simply our devilish tactic to make the conspirators think we're
     willingly playing for them. You know better. ;)
+
+FUNCTIONS
+  "constant_time"
+      constant_time( $time, $callback );
+      constant_time( $callback ); # $time defaults to 1 second.
 
 AUTHOR
     Kent Fredric <kentnl@cpan.org>

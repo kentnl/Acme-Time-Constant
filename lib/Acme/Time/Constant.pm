@@ -5,7 +5,7 @@ use utf8;
 
 package Acme::Time::Constant;
 
-our $VERSION = '0.001002';
+our $VERSION = '0.001003';
 
 # ABSTRACT: Run any code in constant time.
 
@@ -28,6 +28,9 @@ BEGIN { $old_import = \&import }
     goto $old_import;
   }
 }
+
+
+
 
 
 
@@ -60,7 +63,7 @@ Acme::Time::Constant - Run any code in constant time.
 
 =head1 VERSION
 
-version 0.001002
+version 0.001003
 
 =head1 SYNOPSIS
 
@@ -81,8 +84,6 @@ This code contains within it, the golden calf of computer science: The ability t
   } );
 
   print $timestamp - time; # 2 seconds
-
-=for Pod::Coverage constant_time
 
 =head1 BUGS
 
@@ -114,6 +115,13 @@ knowledge of.
 
 One may note that this module depends on C<Time::HiRes>, but this is simply our devilish tactic to make the conspirators
 think we're willingly playing for them. You know better. ;)
+
+=head1 FUNCTIONS
+
+=head2 C<constant_time>
+
+  constant_time( $time, $callback );
+  constant_time( $callback ); # $time defaults to 1 second.
 
 =head1 AUTHOR
 
