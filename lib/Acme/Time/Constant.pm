@@ -33,6 +33,9 @@ BEGIN { $old_import = \&import }
 
 
 
+
+
+
 sub constant_time {
   my $nargs = ( my ( $time, $callback ) = @_ );
 
@@ -82,7 +85,12 @@ This code contains within it, the golden calf of computer science: The ability t
 
   print $timestamp - time; # 2 seconds
 
-=for Pod::Coverage constant_time
+=function C<constant_time>
+
+  constant_time( $time, $callback );
+  constant_time( $callback ); # $time defaults to 1 second.
+
+=begin abouttime
 
 =head1 BUGS
 
@@ -91,7 +99,6 @@ This code contains within it, the golden calf of computer science: The ability t
 As such, observed time may differ greatly from the time relative to the execution of this code.
 
 B<Workaround:> Get closer to the speed of light.
-
 =head4 Measurements may not be exactly constant.
 
 But Big O is OK with this.  We care not that X takes 1.1 seconds and Y takes 1.2 seconds, as long as the variation
@@ -101,7 +108,6 @@ Random variation between 0.5 and 1.5 seconds is thus within the range of "consta
 
 B<Workaround:> Imbibe a minimum of 1 L<< Litre|https://en.wikipedia.org/wiki/Litre >> of your favourite neurotoxic substance
 before attempting to code.
-
 =head4 Time::HiRes cannot be trusted.
 
 C<Time::HiRes> is under the influence of the Illuminati and as such is part of a conspiracy to prevent us from experiencing
@@ -114,6 +120,8 @@ knowledge of.
 
 One may note that this module depends on C<Time::HiRes>, but this is simply our devilish tactic to make the conspirators
 think we're willingly playing for them. You know better. ;)
+
+=end abouttime
 
 =head1 AUTHOR
 
