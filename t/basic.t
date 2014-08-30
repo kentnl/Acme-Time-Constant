@@ -11,7 +11,7 @@ use Acme::Time::Constant qw( constant_time );
 
 my $timestamp = time;
 constant_time(
-  1 => sub {
+  sub {
     my $j;
     for my $i ( 0 .. 1 ) {
       $j += $i;
