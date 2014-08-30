@@ -42,6 +42,8 @@ BEGIN { $old_import = \&import }
 
 
 
+
+
 sub constant_time {
   my $nargs = ( my ( $time, $callback ) = @_ );
 
