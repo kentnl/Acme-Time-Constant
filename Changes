@@ -1,6 +1,9 @@
 Release history for Acme-Time-Constant
 
 {{$NEXT}}
+ [00 Trivial]
+ - Improve test coverage.
+ - Pull timespace and subspace closer together.
 
 0.001002 2014-08-30T00:35:43Z
  [00 Trivial]
