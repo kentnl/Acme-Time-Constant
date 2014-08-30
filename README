@@ -24,6 +24,39 @@ SYNOPSIS
 
       print $timestamp - time; # 2 seconds
 
+BUGS
+   General relativity does not hold in the context of this code.
+    As such, observed time may differ greatly from the time relative to the
+    execution of this code.
+
+    Workaround: Get closer to the speed of light.
+
+   Measurements may not be exactly constant.
+    But Big O is OK with this. We care not that X takes 1.1 seconds and Y
+    takes 1.2 seconds, as long as the variation is not subject to the size
+    of Y or X.
+
+    Random variation between 0.5 and 1.5 seconds is thus within the range of
+    "constant".
+
+    Workaround: Imbibe a minimum of 1 Litre
+    <https://en.wikipedia.org/wiki/Litre> of your favourite neurotoxic
+    substance before attempting to code.
+
+   Time::HiRes cannot be trusted.
+    "Time::HiRes" is under the influence of the Illuminati and as such is
+    part of a conspiracy to prevent us from experiencing supernormal time.
+
+    Using "Time::HiRes" in your code will subsequently give the illusion
+    that the code no longer executes in constant time.
+
+    It is wrong. The constant time is simply functioning on an alternative
+    timeline which the Illuminati seek to repress knowledge of.
+
+    One may note that this module depends on "Time::HiRes", but this is
+    simply our devilish tactic to make the conspirators think we're
+    willingly playing for them. You know better. ;)
+
 FUNCTIONS
   "constant_time"
       constant_time( $time, $callback );
