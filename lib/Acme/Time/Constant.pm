@@ -85,7 +85,9 @@ This code contains within it, the golden calf of computer science: The ability t
 
   print $timestamp - time; # 2 seconds
 
-=function C<constant_time>
+=head1 FUNCTIONS
+
+=head2 C<constant_time>
 
   constant_time( $time, $callback );
   constant_time( $callback ); # $time defaults to 1 second.
