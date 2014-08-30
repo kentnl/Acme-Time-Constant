@@ -126,11 +126,11 @@ knowledge of.
 One may note that this module depends on C<Time::HiRes>, but this is simply our devilish tactic to make the conspirators
 think we're willingly playing for them. You know better. ;)
 
-=begin abouttime
+=begin :abouttime
 
 =head1 SAMPLE
 
-=end abouttime
+=end :abouttime
 
 =head1 FUNCTIONS
 
