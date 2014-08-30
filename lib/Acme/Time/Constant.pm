@@ -29,7 +29,10 @@ BEGIN { $old_import = \&import }
   }
 }
 
-=for Pod::Coverage constant_time
+=function C<constant_time>
+
+  constant_time( $time, $callback );
+  constant_time( $callback ); # $time defaults to 1 second.
 
 =cut
 
@@ -68,6 +71,8 @@ This code contains within it, the golden calf of computer science: The ability t
 
   print $timestamp - time; # 2 seconds
 
+=begin :abouttime
+
 =head1 BUGS
 
 =head4 General relativity does not hold in the context of this code.
@@ -98,5 +103,7 @@ knowledge of.
 
 One may note that this module depends on C<Time::HiRes>, but this is simply our devilish tactic to make the conspirators
 think we're willingly playing for them. You know better. ;)
+
+=end :abouttime
 
 =cut

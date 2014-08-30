@@ -57,6 +57,13 @@ knowledge of.
 One may note that this module depends on `Time::HiRes`, but this is simply our devilish tactic to make the conspirators
 think we're willingly playing for them. You know better. ;)
 
+# FUNCTIONS
+
+## `constant_time`
+
+    constant_time( $time, $callback );
+    constant_time( $callback ); # $time defaults to 1 second.
+
 # AUTHOR
 
 Kent Fredric <kentnl@cpan.org>
