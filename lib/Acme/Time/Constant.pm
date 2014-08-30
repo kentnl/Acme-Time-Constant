@@ -94,7 +94,7 @@ This code contains within it, the golden calf of computer science: The ability t
 
 =begin abouttime
 
-=head1 BUGS
+=head2 BUGS
 
 =head4 General relativity does not hold in the context of this code.
 
