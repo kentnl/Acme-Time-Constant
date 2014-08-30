@@ -5,7 +5,7 @@ use utf8;
 
 package Acme::Time::Constant;
 
-our $VERSION = '0.001001';
+our $VERSION = '0.001002';
 
 # ABSTRACT: Run any code in constant time.
 
@@ -60,7 +60,7 @@ Acme::Time::Constant - Run any code in constant time.
 
 =head1 VERSION
 
-version 0.001001
+version 0.001002
 
 =head1 SYNOPSIS
 
@@ -117,7 +117,7 @@ think we're willingly playing for them. You know better. ;)
 
 =head1 AUTHOR
 
-Kent Fredric <kentfredric@gmail.com>
+Kent Fredric <kentnl@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 

@@ -2,7 +2,7 @@ NAME
     Acme::Time::Constant - Run any code in constant time.
 
 VERSION
-    version 0.001001
+    version 0.001002
 
 SYNOPSIS
     This code contains within it, the golden calf of computer science: The
@@ -58,7 +58,7 @@ BUGS
     willingly playing for them. You know better. ;)
 
 AUTHOR
-    Kent Fredric <kentfredric@gmail.com>
+    Kent Fredric <kentnl@cpan.org>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2014 by Kent Fredric
