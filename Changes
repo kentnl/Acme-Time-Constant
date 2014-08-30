@@ -1,6 +1,6 @@
 Release history for Acme-Time-Constant
 
-0.001002 2014-08-30T00:30:56Z
+0.001002 2014-08-30T00:33:03Z
  [Dependencies::Stats]
  - Dependencies changed since 0.001001, see misc/*.deps* for details
  - develop: +1 ↑1 (suggests: ↑2)
