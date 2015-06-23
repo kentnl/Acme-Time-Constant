@@ -1,5 +1,18 @@
 Release history for Acme-Time-Constant
 
+0.001004 2015-06-23T04:50:45Z f351e75
+ [00 Minor]
+ - Attempt 5.6 support
+ - This will come in handy when this module supports time travel and has to be used back before 5.8 exists without
+   breaking timespace.
+
+ [Dependencies::Stats]
+ - Dependencies changed since 0.001003, see misc/*.deps* for details
+ - configure: +1 (recommends: ↑1)
+ - develop: +9 ↑3 -3 (recommends: +1, suggests: ↑2)
+ - runtime: ↓1 -1
+ - test: +1 (recommends: ↑1 ↓1)
+
 0.001003 2014-08-30T07:49:40Z
  [00 Trivial]
  - Improve test coverage.
@@ -32,4 +45,3 @@ Release history for Acme-Time-Constant
 
 0.001000 2014-08-04T04:27:24Z
  - First version.
-
