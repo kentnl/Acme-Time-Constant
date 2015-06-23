@@ -1,6 +1,10 @@
 Release history for Acme-Time-Constant
 
 0.001004 2014-08-30T07:50:16Z 3df2509
+ [Dependencies::Stats]
+ - Dependencies changed since 0.001003, see misc/*.deps* for details
+ - develop: +2 ↑1 (suggests: ↑1)
+ - test: (recommends: ↑1)
 
 0.001003 2014-08-30T07:49:40Z
  [00 Trivial]
@@ -34,4 +38,3 @@ Release history for Acme-Time-Constant
 
 0.001000 2014-08-04T04:27:24Z
  - First version.
-
