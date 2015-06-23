@@ -1,7 +1,4 @@
 {
-   "failures" : {
-      "Time::Warp" : "module was not found in INC"
-   },
    "modules" : {
       "CPAN::Meta" : "2.150005",
       "Dist::Zilla" : "5.037",
@@ -66,6 +63,7 @@
       "Test::Pod" : "1.50",
       "Test::Pod::Coverage" : "1.10",
       "Time::HiRes" : "1.9726",
+      "Time::Warp" : "0.52",
       "strict" : "1.09",
       "warnings" : "1.32"
    },
