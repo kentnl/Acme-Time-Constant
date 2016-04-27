@@ -1,6 +1,8 @@
 Release history for Acme-Time-Constant
 
 {{$NEXT}}
+
+0.001005 2016-04-27T14:50:17Z adc5064
  - Requiring the newest Time::Warp, which appears to have avoided the nvsize bug reported in issue #1
  - Alternatively: I blame CERN
 
