@@ -20,3 +20,4 @@ srcreadme         = mkdn
 ; auto_prereqs_skip = File::Find
 
 [Prereqs]
+Time::Warp = 0.52 ; NVSIZE bug
