@@ -24,7 +24,7 @@ provides:
 requires:
   Sub::Exporter::Progressive: '0'
   Time::HiRes: '0'
-  Time::Warp: '0'
+  Time::Warp: '0.52'
   perl: '5.006'
   strict: '0'
   warnings: '0'

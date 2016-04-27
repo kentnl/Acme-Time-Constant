@@ -19,7 +19,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Sub::Exporter::Progressive" => 0,
     "Time::HiRes" => 0,
-    "Time::Warp" => 0,
+    "Time::Warp" => "0.52",
     "strict" => 0,
     "warnings" => 0
   },
@@ -41,7 +41,7 @@ my %FallbackPrereqs = (
   "Sub::Exporter::Progressive" => 0,
   "Test::More" => "0.89",
   "Time::HiRes" => 0,
-  "Time::Warp" => 0,
+  "Time::Warp" => "0.52",
   "strict" => 0,
   "warnings" => 0
 );

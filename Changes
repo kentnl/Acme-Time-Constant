@@ -1,9 +1,13 @@
 Release history for Acme-Time-Constant
 
-0.001005 2016-04-27T14:45:11Z f91e653
+0.001005 2016-04-27T14:50:17Z adc5064
+ - Requiring the newest Time::Warp, which appears to have avoided the nvsize bug reported in issue #1
+ - Alternatively: I blame CERN
+
  [Dependencies::Stats]
  - Dependencies changed since 0.001004, see misc/*.deps* for details
  - develop: +4 ↑1 (suggests: ↑1)
+ - runtime: ↑1
 
 0.001004 2015-06-23T04:50:45Z f351e75
  [00 Minor]
