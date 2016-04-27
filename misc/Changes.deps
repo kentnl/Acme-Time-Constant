@@ -1,6 +1,8 @@
 This file contains changes in REQUIRED dependencies for standard CPAN phases (configure/build/runtime/test)
 
-0.001005
+0.001006
+
+0.001005 2016-04-27T14:50:17Z
  [Changed / runtime requires]
  - Time::Warp 0 → 0.52
 
