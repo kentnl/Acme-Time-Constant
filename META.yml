@@ -11,7 +11,7 @@ configure_requires:
   ExtUtils::MakeMaker: '0'
   perl: '5.006'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.037, CPAN::Meta::Converter version 2.150005'
+generated_by: 'Dist::Zilla version 5.043, CPAN::Meta::Converter version 2.150001'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,11 +20,11 @@ name: Acme-Time-Constant
 provides:
   Acme::Time::Constant:
     file: lib/Acme/Time/Constant.pm
-    version: '0.001004'
+    version: '0.001005'
 requires:
   Sub::Exporter::Progressive: '0'
   Time::HiRes: '0'
-  Time::Warp: '0'
+  Time::Warp: '0.52'
   perl: '5.006'
   strict: '0'
   warnings: '0'
@@ -32,4 +32,4 @@ resources:
   bugtracker: https://github.com/kentnl/Acme-Time-Constant/issues
   homepage: https://github.com/kentnl/Acme-Time-Constant
   repository: https://github.com/kentnl/Acme-Time-Constant.git
-version: '0.001004'
+version: '0.001005'
