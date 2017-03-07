@@ -4,7 +4,7 @@ use warnings;
 
 package Acme::Time::Constant;
 
-our $VERSION = '0.001006';
+our $VERSION = '0.001007';
 
 # ABSTRACT: Run any code in constant time.
 
@@ -62,7 +62,7 @@ Acme::Time::Constant - Run any code in constant time.
 
 =head1 VERSION
 
-version 0.001006
+version 0.001007
 
 =head1 SYNOPSIS
 

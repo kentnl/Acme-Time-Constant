@@ -1,5 +1,7 @@
 Release history for Acme-Time-Constant
 
+0.001007 2017-03-07T08:14:06Z 1dbeee7
+
 0.001006 2017-03-07T08:12:13Z 805d720
  - Bugfix: Avoid test failures with -Ddefault_inc_excludes_dot
 
