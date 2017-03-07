@@ -1,6 +1,8 @@
 Release history for Acme-Time-Constant
 
 {{$NEXT}}
+
+0.001006 2017-03-07T08:12:13Z 805d720
  - Bugfix: Avoid test failures with -Ddefault_inc_excludes_dot
 
  [Dependencies::Stats]
